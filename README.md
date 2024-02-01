@@ -23,17 +23,16 @@ Install the requirements of the project.
 pip install -r requirements.txt
 ```
 
-### Run
+### Run the Flask Application
 
-Run the Flask Application
 ```
 python deep.py
 ```
 
 ### Accessing Latest Stories
-Retrieve the latest stories from https://time.com by making a GET request to the /getTimeStories endpoint of this Flask application.<br>
+* Retrieve the latest stories from https://time.com by making a GET request to the /getTimeStories endpoint of this Flask application.<br>
 By accessing URL `http://<localhost>:<portnumber>/getTimeStories` we get top 6 latest stories as default.
 
-Optionally, you can specify the number of stories to retrieve by appending `?no_of_stories=<number>` to the URL.<br>
+* Optionally, you can specify the number of stories to retrieve by appending `?no_of_stories=<number>` to the URL.<br>
 To get the top 3 latest stories, access the following URL:
 `http://<localhost>:<portnumber>/getTimeStories?no_of_stories=3`
