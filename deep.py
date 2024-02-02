@@ -17,7 +17,7 @@ def latest_stories(num_stories=6):
         stories = re.findall(story_pattern, div_items)[:num_stories]
         stories_json=[]
         for link, title in stories:
-            stories_json.append({"title": title.strip(), "link": link}) 
+            stories_json.append({"title": title.strip(), "link": "https://time.com"+link}) 
         return stories_json
     else:
         return []
